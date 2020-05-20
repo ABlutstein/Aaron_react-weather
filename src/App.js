@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Weather from "./components/Weather/Weather.forecast";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>React Weather App milestone</h1>
+        <p>By Aaron Blutstein</p>
       </header>
+      <div className="App-main">
+        <main>
+          <Weather />
+        </main>
+        <footer>Aaron Blutstein © 2020</footer>
+      </div>
     </div>
   );
 }
