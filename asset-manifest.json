@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/aaron_react-weather/static/css/main.456f872d.chunk.css",
+    "main.js": "/aaron_react-weather/static/js/main.445615a7.chunk.js",
+    "main.js.map": "/aaron_react-weather/static/js/main.445615a7.chunk.js.map",
+    "runtime-main.js": "/aaron_react-weather/static/js/runtime-main.d9ced387.js",
+    "runtime-main.js.map": "/aaron_react-weather/static/js/runtime-main.d9ced387.js.map",
+    "static/js/2.8fdcb456.chunk.js": "/aaron_react-weather/static/js/2.8fdcb456.chunk.js",
+    "static/js/2.8fdcb456.chunk.js.map": "/aaron_react-weather/static/js/2.8fdcb456.chunk.js.map",
+    "index.html": "/aaron_react-weather/index.html",
+    "precache-manifest.177c37bddd571ffc511b96d6993b284c.js": "/aaron_react-weather/precache-manifest.177c37bddd571ffc511b96d6993b284c.js",
+    "service-worker.js": "/aaron_react-weather/service-worker.js",
+    "static/css/main.456f872d.chunk.css.map": "/aaron_react-weather/static/css/main.456f872d.chunk.css.map",
+    "static/js/2.8fdcb456.chunk.js.LICENSE.txt": "/aaron_react-weather/static/js/2.8fdcb456.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/aaron_react-weather/static/media/weatherpic.9849d3e2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d9ced387.js",
+    "static/js/2.8fdcb456.chunk.js",
+    "static/css/main.456f872d.chunk.css",
+    "static/js/main.445615a7.chunk.js"
+  ]
+}
