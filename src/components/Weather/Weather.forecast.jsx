@@ -14,10 +14,24 @@ class Weather extends Component {
     errorMessage: ""
   };
 
-  getPosition = () => {
-    return new Promise(function(resolve, reject) {
-      navigator.geolocation.getCurrentPosition(resolve, reject);
-    });
+  weatherInit = () => {
+    const success = position => {
+      this.getWeather(position.coords.latitude, position.coords.longitude);
+    };
+
+    const error = () => {
+      alert(
+        "Unable to retrieve location because you have blocked it - please allow."
+      );
+    };
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(success, error);
+    } else {
+      alert(
+        "Your browser does not support location tracking, or permission is denied."
+      );
+    }
   };
 
   getWeather = async (latitude, longitude) => {
@@ -38,17 +52,11 @@ class Weather extends Component {
   };
 
   componentDidMount() {
-    this.getPosition()
-      .then(position => {
-        this.getWeather(position.coords.latitude, position.coords.longitude);
-      })
-      .catch(err => {
-        this.setState({ errorMessage: err.message });
-      });
+    this.weatherInit();
 
     this.timerID = setInterval(
       () => this.getWeather(this.state.lat, this.state.lon),
-      60000
+      50000
     );
   }
 

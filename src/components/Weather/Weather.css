@@ -3,6 +3,7 @@
   font-size: 25px;
   text-align: center;
   color: black;
+  text-transform: capitalize;
 }
 
 .weather-city {
@@ -14,7 +15,7 @@
 
 .weather-temp {
   font-family: helvetica;
-  font-size: 24px;
+  font-size: 2rem;
   color: red;
   text-align: center;
 }
